@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     type: "website",
     images: ["/images/residence-ivory.jpg"],
   },
+  verification: {
+    google: "DYifwrhajRBlZbVH4ym0HG87TaX30ARoJrTKomx-JjA",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
