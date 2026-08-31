@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FOOTER_SERVICES, NAV_LINKS, SOCIALS } from "@/lib/data";
 import { scrollToSection } from "@/lib/scroll";
 import {
@@ -24,8 +25,14 @@ export default function SiteFooter() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex size-10 items-center justify-center rounded-full border border-gold/50 font-serif text-xl font-semibold text-gold">
-                O
+              <span className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-lg bg-white">
+                <Image
+                  src="/logo.jpg"
+                  alt="OMuga Services"
+                  fill
+                  sizes="44px"
+                  className="object-contain p-0.5"
+                />
               </span>
               <div className="flex flex-col leading-none">
                 <span className="font-serif text-xl font-semibold tracking-[0.22em] text-ivory">

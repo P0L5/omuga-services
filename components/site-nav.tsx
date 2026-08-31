@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,24 +17,21 @@ import { scrollToSection } from "@/lib/scroll";
 import { cn } from "@/lib/utils";
 import { EASE } from "@/components/reveal";
 
-function Monogram() {
+function Logo() {
   return (
     <button
       onClick={() => scrollToSection("#top")}
-      className="group flex items-center gap-3 outline-none"
+      className="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white outline-none transition-all duration-300 hover:ring-2 hover:ring-gold/50"
       aria-label="OMuga Services — back to top"
     >
-      <span className="flex size-9 items-center justify-center rounded-full border border-gold/50 font-serif text-lg font-semibold text-gold transition-colors duration-300 group-hover:bg-gold group-hover:text-ink">
-        O
-      </span>
-      <span className="hidden flex-col items-start leading-none sm:flex">
-        <span className="font-serif text-lg font-semibold tracking-[0.22em] text-ivory">
-          OMUGA
-        </span>
-        <span className="text-[0.55rem] font-semibold uppercase tracking-[0.5em] text-gold">
-          Services
-        </span>
-      </span>
+      <Image
+        src="/logo.jpg"
+        alt="OMuga Services"
+        fill
+        sizes="40px"
+        className="object-contain p-0.5"
+        priority
+      />
     </button>
   );
 }
@@ -67,7 +65,7 @@ export default function SiteNav() {
       )}
     >
       <nav className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-5 sm:px-8">
-        <Monogram />
+        <Logo />
 
         <ul className="hidden items-center gap-9 lg:flex">
           {NAV_LINKS.map((link) => (
@@ -110,8 +108,15 @@ export default function SiteNav() {
             >
               <SheetHeader className="border-b border-border">
                 <SheetTitle className="flex items-center gap-3">
-                  <span className="flex size-9 items-center justify-center rounded-full border border-gold/50 font-serif text-lg font-semibold text-gold">
-                    O
+                  <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white">
+                    <Image
+                      src="/logo.jpg"
+                      alt="OMuga Services"
+                      fill
+                      sizes="40px"
+                      className="object-contain p-0.5"
+                      priority
+                    />
                   </span>
                   <span className="font-serif text-lg font-semibold tracking-[0.22em] text-ivory">
                     OMUGA
