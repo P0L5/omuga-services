@@ -6,9 +6,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://omugaservices.com"),
-  title: "OMuga Services — Luxury Stays, Concierge & Property Brokerage",
+  title: "Omuga Services — Luxury Stays, Concierge & Property Brokerage",
   description:
-    "OMuga Services curates East Africa's finest hotels, Airbnb stays, safari lodges and cottages, delivers bespoke lifestyle concierge — airport pickups, private chefs, chauffeurs — and brokers luxury villas, land and verified properties.",
+    "Omuga Services curates East Africa's finest hotels, Airbnb stays, safari lodges and cottages, delivers bespoke lifestyle concierge — airport pickups, private chefs, chauffeurs — and brokers luxury villas, land and verified properties.",
   keywords: [
     "luxury stays Uganda",
     "Airbnb booking Kampala",
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     "concierge services East Africa",
     "luxury property brokerage",
     "villas for sale Uganda",
-    "OMuga Services",
+    "Omuga Services",
   ],
   openGraph: {
-    title: "OMuga Services — Luxury, Curated for East Africa",
+    title: "Omuga Services — Luxury, Curated for East Africa",
     description:
       "Hotels & Airbnb booking, bespoke lifestyle concierge, and luxury property brokerage across Uganda and Kenya.",
     type: "website",

@@ -6,6 +6,7 @@ import Marquee from "@/components/sections/marquee";
 import About from "@/components/sections/about";
 import Services from "@/components/sections/services";
 import Properties from "@/components/sections/properties";
+import MediaGallery from "@/components/sections/media-gallery";
 import VideoTours from "@/components/sections/video-tours";
 import Concierge from "@/components/sections/concierge";
 import WhyUs from "@/components/sections/why-us";
@@ -27,6 +28,7 @@ export default function Home() {
         <About />
         <Services />
         <Properties />
+        <MediaGallery />
         <VideoTours />
         <Concierge />
         <WhyUs />

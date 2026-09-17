@@ -21,12 +21,12 @@ function Logo() {
   return (
     <button
       onClick={() => scrollToSection("#top")}
-      className="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white outline-none transition-all duration-300 hover:ring-2 hover:ring-gold/50"
-      aria-label="OMuga Services — back to top"
+      className="group relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white outline-none transition-all duration-300 hover:ring-2 hover:ring-blue/50"
+      aria-label="Omuga Services — back to top"
     >
       <Image
         src="/logo.jpg"
-        alt="OMuga Services"
+        alt="Omuga Services"
         fill
         sizes="40px"
         className="object-contain p-0.5"
@@ -75,7 +75,7 @@ export default function SiteNav() {
                 className="group relative text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-ivory/70 transition-colors duration-300 hover:text-ivory"
               >
                 {link.label}
-                <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-gold transition-all duration-400 group-hover:w-full" />
+                <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-blue transition-all duration-400 group-hover:w-full" />
               </button>
             </li>
           ))}
@@ -85,11 +85,11 @@ export default function SiteNav() {
           <Button
             onClick={() =>
               window.open(
-                waLink("Hello OMuga Services — I'd like to make a booking."),
+                waLink("Hello Omuga Services — I'd like to make a booking."),
                 "_blank"
               )
             }
-            className="hidden h-10 cursor-pointer rounded-full bg-gold px-6 text-[0.7rem] font-bold uppercase tracking-[0.25em] text-ink transition-all duration-300 hover:bg-gold-light hover:gold-glow sm:inline-flex"
+            className="hidden h-10 cursor-pointer rounded-full bg-blue px-6 text-[0.7rem] font-bold uppercase tracking-[0.25em] text-white transition-all duration-300 hover:bg-blue-light hover:blue-glow sm:inline-flex"
           >
             <MessageCircle className="size-3.5" />
             Book Now
@@ -111,7 +111,7 @@ export default function SiteNav() {
                   <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white">
                     <Image
                       src="/logo.jpg"
-                      alt="OMuga Services"
+                      alt="Omuga Services"
                       fill
                       sizes="40px"
                       className="object-contain p-0.5"
@@ -138,7 +138,7 @@ export default function SiteNav() {
                           ease: EASE,
                         }}
                         onClick={() => go(link.href)}
-                        className="border-b border-border/60 py-5 text-left font-serif text-3xl font-medium text-ivory transition-colors hover:text-gold"
+                        className="border-b border-border/60 py-5 text-left font-serif text-3xl font-medium text-ivory transition-colors hover:text-blue"
                       >
                         {link.label}
                       </motion.button>
@@ -155,12 +155,12 @@ export default function SiteNav() {
                     onClick={() =>
                       window.open(
                         waLink(
-                          "Hello OMuga Services — I'd like to make a booking."
+                          "Hello Omuga Services — I'd like to make a booking."
                         ),
                         "_blank"
                       )
                     }
-                    className="h-12 w-full cursor-pointer rounded-full bg-gold text-[0.7rem] font-bold uppercase tracking-[0.25em] text-ink hover:bg-gold-light"
+                    className="h-12 w-full cursor-pointer rounded-full bg-blue text-[0.7rem] font-bold uppercase tracking-[0.25em] text-white hover:bg-blue-light"
                   >
                     <MessageCircle className="size-4" />
                     Book on WhatsApp

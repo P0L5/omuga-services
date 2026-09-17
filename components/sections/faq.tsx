@@ -30,7 +30,7 @@ export default function Faq() {
               value={`item-${i}`}
               className="border-b border-border"
             >
-              <AccordionTrigger className="py-6 font-serif text-lg font-medium text-ivory transition-colors hover:text-gold hover:no-underline sm:text-xl [&>svg]:text-gold">
+              <AccordionTrigger className="py-6 font-serif text-lg font-medium text-ivory transition-colors hover:text-blue hover:no-underline sm:text-xl [&>svg]:text-blue">
                 {faq.q}
               </AccordionTrigger>
               <AccordionContent className="pb-6 text-sm leading-relaxed text-ivory/60 sm:text-base">

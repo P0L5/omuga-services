@@ -28,16 +28,16 @@ export default function SectionHeading({
           align === "center" && "justify-center"
         )}
       >
-        <span className="hairline-gold w-10 sm:w-16" aria-hidden />
-        <span className="text-[0.65rem] sm:text-xs font-semibold uppercase tracking-[0.45em] text-gold">
+        <span className="hairline-blue w-10 sm:w-16" aria-hidden />
+        <span className="text-[0.65rem] sm:text-xs font-semibold uppercase tracking-[0.45em] text-blue">
           {eyebrow}
         </span>
-        <span className="hairline-gold w-10 sm:w-16" aria-hidden />
+        <span className="hairline-blue w-10 sm:w-16" aria-hidden />
       </div>
       <h2 className="mt-6 font-serif text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.05] text-ivory">
         {title}{" "}
         {italic && (
-          <em className="text-gold-gradient font-medium italic">{italic}</em>
+          <em className="text-blue-gradient font-medium italic">{italic}</em>
         )}
       </h2>
     </Reveal>

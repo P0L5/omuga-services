@@ -28,7 +28,7 @@ export default function SiteFooter() {
               <span className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-lg bg-white">
                 <Image
                   src="/logo.jpg"
-                  alt="OMuga Services"
+                  alt="Omuga Services"
                   fill
                   sizes="44px"
                   className="object-contain p-0.5"
@@ -38,7 +38,7 @@ export default function SiteFooter() {
                 <span className="font-serif text-xl font-semibold tracking-[0.22em] text-ivory">
                   OMUGA
                 </span>
-                <span className="text-[0.55rem] font-semibold uppercase tracking-[0.5em] text-gold">
+                <span className="text-[0.55rem] font-semibold uppercase tracking-[0.5em] text-blue">
                   Services
                 </span>
               </div>
@@ -54,13 +54,13 @@ export default function SiteFooter() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`OMuga Services on ${social.label}`}
+                  aria-label={`Omuga Services on ${social.label}`}
                   className="group flex flex-col items-center gap-2"
                 >
-                  <span className="flex size-10 items-center justify-center rounded-full border border-border text-ivory/60 transition-all duration-300 group-hover:border-gold group-hover:bg-gold group-hover:text-ink">
+                  <span className="flex size-10 items-center justify-center rounded-full border border-border text-ivory/60 transition-all duration-300 group-hover:border-blue group-hover:bg-blue group-hover:text-white">
                     {SOCIAL_ICONS[social.label]}
                   </span>
-                  <span className="text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-ivory/40 transition-colors duration-300 group-hover:text-gold">
+                  <span className="text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-ivory/40 transition-colors duration-300 group-hover:text-blue">
                     {social.handle}
                   </span>
                 </a>
@@ -70,7 +70,7 @@ export default function SiteFooter() {
 
           {/* Explore */}
           <div>
-            <h3 className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-gold">
+            <h3 className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-blue">
               Explore
             </h3>
             <ul className="mt-6 space-y-3.5">
@@ -78,7 +78,7 @@ export default function SiteFooter() {
                 <li key={link.href}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-sm text-ivory/55 transition-colors duration-300 hover:text-gold"
+                    className="text-sm text-ivory/55 transition-colors duration-300 hover:text-blue"
                   >
                     {link.label}
                   </button>
@@ -89,7 +89,7 @@ export default function SiteFooter() {
 
           {/* Services */}
           <div>
-            <h3 className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-gold">
+            <h3 className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-blue">
               Services
             </h3>
             <ul className="mt-6 space-y-3.5">
@@ -103,7 +103,7 @@ export default function SiteFooter() {
 
           {/* Offices */}
           <div>
-            <h3 className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-gold">
+            <h3 className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-blue">
               The Desk
             </h3>
             <ul className="mt-6 space-y-4 text-sm text-ivory/55">
@@ -123,15 +123,21 @@ export default function SiteFooter() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-xs text-ivory/35">
-            © {new Date().getFullYear()} OMuga Services. All rights reserved.
+            © {new Date().getFullYear()} Omuga Services. All rights reserved.
           </p>
           <p className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.3em] text-ivory/35">
             Kampala
-            <span className="size-1 rotate-45 bg-gold/60" aria-hidden />
+            <span className="size-1 rotate-45 bg-blue/60" aria-hidden />
             Nairobi
-            <span className="size-1 rotate-45 bg-gold/60" aria-hidden />
+            <span className="size-1 rotate-45 bg-blue/60" aria-hidden />
             Beyond
           </p>
+          <a
+            href="/admin"
+            className="text-[0.65rem] uppercase tracking-[0.3em] text-ivory/30 transition-colors duration-300 hover:text-blue"
+          >
+            Admin
+          </a>
         </div>
       </div>
     </footer>

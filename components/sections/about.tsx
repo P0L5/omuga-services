@@ -21,7 +21,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
   }, [inView, value]);
 
   return (
-    <span ref={ref} className="font-serif text-5xl font-medium text-gold-gradient sm:text-6xl">
+    <span ref={ref} className="font-serif text-5xl font-medium text-blue-gradient sm:text-6xl">
       {display}
       {suffix}
     </span>
@@ -35,14 +35,14 @@ export default function About() {
         <div>
           <Reveal>
             <div className="flex items-center gap-4">
-              <span className="hairline-gold w-12" aria-hidden />
-              <span className="text-[0.65rem] sm:text-xs font-semibold uppercase tracking-[0.45em] text-gold">
-                The OMuga Standard
+              <span className="hairline-blue w-12" aria-hidden />
+              <span className="text-[0.65rem] sm:text-xs font-semibold uppercase tracking-[0.45em] text-blue">
+                The Omuga Standard
               </span>
             </div>
             <h2 className="mt-6 font-serif text-4xl font-medium leading-[1.08] text-ivory sm:text-5xl lg:text-[3.4rem]">
               One name for every{" "}
-              <em className="text-gold-gradient italic">extraordinary</em>{" "}
+              <em className="text-blue-gradient italic">extraordinary</em>{" "}
               request.
             </h2>
           </Reveal>
@@ -51,7 +51,7 @@ export default function About() {
         <div className="flex flex-col justify-end">
           <Reveal delay={0.15}>
             <p className="text-base leading-relaxed text-ivory/70 sm:text-lg">
-              OMuga Services began with a simple promise: that luxury in East
+              Omuga Services began with a simple promise: that luxury in East
               Africa should never require compromise. Today we are the quiet
               force behind seamless arrivals at Entebbe, candle-lit dinners in
               Kololo residences, weekends at safari lodges, and the keys to

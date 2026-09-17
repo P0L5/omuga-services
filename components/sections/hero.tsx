@@ -34,7 +34,7 @@ export default function Hero() {
           loop
           playsInline
           preload="auto"
-          aria-label="A luxury residence curated by OMuga Services"
+          aria-label="A luxury residence curated by Omuga Services"
           className="absolute inset-0 h-full w-full object-cover"
         />
       </motion.div>
@@ -54,8 +54,8 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 2.4, ease: EASE }}
           className="mb-7 flex items-center gap-4"
         >
-          <span className="hairline-gold w-12 sm:w-20" aria-hidden />
-          <span className="text-[0.65rem] sm:text-xs font-semibold uppercase tracking-[0.45em] text-gold">
+          <span className="hairline-blue w-12 sm:w-20" aria-hidden />
+          <span className="text-[0.65rem] sm:text-xs font-semibold uppercase tracking-[0.45em] text-blue">
             {HERO.eyebrow}
           </span>
         </motion.div>
@@ -74,7 +74,7 @@ export default function Hero() {
                 className="block"
               >
                 {i === 1 ? (
-                  <em className="text-gold-gradient italic">{line}</em>
+                  <em className="text-blue-gradient italic">{line}</em>
                 ) : (
                   line
                 )}
@@ -100,14 +100,14 @@ export default function Hero() {
         >
           <Button
             onClick={() => scrollToSection(HERO.primaryCta.href)}
-            className="h-13 cursor-pointer rounded-full bg-gold px-9 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-ink transition-all duration-300 hover:bg-gold-light hover:gold-glow"
+            className="h-13 cursor-pointer rounded-full bg-blue px-9 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-white transition-all duration-300 hover:bg-blue-light hover:blue-glow"
           >
             {HERO.primaryCta.label}
           </Button>
           <Button
             variant="outline"
             onClick={() => window.open(HERO.secondaryCta.href, "_blank")}
-            className="h-13 cursor-pointer rounded-full border-ivory/25 bg-transparent px-9 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-ivory backdrop-blur-sm transition-all duration-300 hover:border-gold hover:text-gold"
+            className="h-13 cursor-pointer rounded-full border-ivory/25 bg-transparent px-9 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-ivory backdrop-blur-sm transition-all duration-300 hover:border-blue hover:text-blue"
           >
             <MessageCircle className="size-4" />
             {HERO.secondaryCta.label}
@@ -128,9 +128,9 @@ export default function Hero() {
           Scroll
         </span>
         <span className="relative h-14 w-px overflow-hidden bg-ivory/15">
-          <span className="absolute left-0 top-0 h-5 w-px animate-scroll-cue bg-gold" />
+          <span className="absolute left-0 top-0 h-5 w-px animate-scroll-cue bg-blue" />
         </span>
-        <ArrowDown className="size-3.5 text-gold" />
+        <ArrowDown className="size-3.5 text-blue" />
       </motion.button>
     </section>
   );

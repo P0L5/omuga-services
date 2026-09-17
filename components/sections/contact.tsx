@@ -15,7 +15,7 @@ export default function Contact() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello OMuga Services — my name is ${
+    const text = `Hello Omuga Services — my name is ${
       name || "a guest"
     }. ${message}`;
     window.open(waLink(text), "_blank");
@@ -39,17 +39,17 @@ export default function Contact() {
             {PHONES.map((phone) => (
               <StaggerItem key={phone.number}>
                 <a
-                  href={waLink("Hello OMuga Services — I'd like to enquire.", phone.number)}
+                  href={waLink("Hello Omuga Services — I'd like to enquire.", phone.number)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold/40 hover:gold-glow"
+                  className="group flex items-center justify-between rounded-2xl border border-border bg-card p-6 transition-all duration-500 hover:-translate-y-1 hover:border-blue/40 hover:blue-glow"
                 >
                   <div className="flex items-center gap-5">
-                    <span className="flex size-12 items-center justify-center rounded-full border border-gold/30 text-gold transition-all duration-500 group-hover:bg-gold group-hover:text-ink">
+                    <span className="flex size-12 items-center justify-center rounded-full border border-blue/30 text-blue transition-all duration-500 group-hover:bg-blue group-hover:text-white">
                       <Phone className="size-5" strokeWidth={1.5} />
                     </span>
                     <div>
-                      <p className="font-serif text-2xl font-medium text-ivory transition-colors group-hover:text-gold">
+                      <p className="font-serif text-2xl font-medium text-ivory transition-colors group-hover:text-blue">
                         {phone.label}
                       </p>
                       <p className="mt-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-ivory/45">
@@ -57,7 +57,7 @@ export default function Contact() {
                       </p>
                     </div>
                   </div>
-                  <MessageCircle className="size-5 text-gold/50 transition-all duration-300 group-hover:text-gold" />
+                  <MessageCircle className="size-5 text-blue/50 transition-all duration-300 group-hover:text-blue" />
                 </a>
               </StaggerItem>
             ))}
@@ -87,7 +87,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="mb-2 block text-[0.65rem] font-bold uppercase tracking-[0.3em] text-gold"
+                    className="mb-2 block text-[0.65rem] font-bold uppercase tracking-[0.3em] text-blue"
                   >
                     Your Name
                   </label>
@@ -96,13 +96,13 @@ export default function Contact() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Amara N."
-                    className="h-12 rounded-xl border-input bg-background/60 px-4 text-ivory placeholder:text-ivory/30 focus-visible:border-gold/60"
+                    className="h-12 rounded-xl border-input bg-background/60 px-4 text-ivory placeholder:text-ivory/30 focus-visible:border-blue/60"
                   />
                 </div>
                 <div className="flex-1">
                   <label
                     htmlFor="message"
-                    className="mb-2 block text-[0.65rem] font-bold uppercase tracking-[0.3em] text-gold"
+                    className="mb-2 block text-[0.65rem] font-bold uppercase tracking-[0.3em] text-blue"
                   >
                     How can we help?
                   </label>
@@ -111,12 +111,12 @@ export default function Contact() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Two nights in Kampala next month, airport pickup on arrival…"
-                    className="min-h-32 rounded-xl border-input bg-background/60 px-4 py-3 text-ivory placeholder:text-ivory/30 focus-visible:border-gold/60"
+                    className="min-h-32 rounded-xl border-input bg-background/60 px-4 py-3 text-ivory placeholder:text-ivory/30 focus-visible:border-blue/60"
                   />
                 </div>
                 <Button
                   type="submit"
-                  className="h-13 cursor-pointer rounded-full bg-gold text-[0.7rem] font-bold uppercase tracking-[0.28em] text-ink transition-all duration-300 hover:bg-gold-light hover:gold-glow"
+                  className="h-13 cursor-pointer rounded-full bg-blue text-[0.7rem] font-bold uppercase tracking-[0.28em] text-white transition-all duration-300 hover:bg-blue-light hover:blue-glow"
                 >
                   <Send className="size-4" />
                   Send via WhatsApp

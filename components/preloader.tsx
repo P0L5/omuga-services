@@ -64,14 +64,14 @@ export default function Preloader() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1.1, delay: 0.7, ease: EASE }}
-            className="mt-6 h-px w-40 sm:w-56 origin-center bg-gradient-to-r from-transparent via-gold to-transparent"
+            className="mt-6 h-px w-40 sm:w-56 origin-center bg-gradient-to-r from-transparent via-blue to-transparent"
           />
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.1 }}
-            className="mt-5 text-[0.65rem] sm:text-xs uppercase tracking-[0.5em] text-gold"
+            className="mt-5 text-[0.65rem] sm:text-xs uppercase tracking-[0.5em] text-blue"
           >
             Services
           </motion.p>

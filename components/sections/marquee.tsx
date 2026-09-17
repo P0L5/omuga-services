@@ -8,10 +8,10 @@ function Row({ ariaHidden = false }: { ariaHidden?: boolean }) {
     >
       {MARQUEE_ITEMS.map((item) => (
         <span key={item} className="flex items-center">
-          <span className="whitespace-nowrap px-8 font-serif text-xl font-medium italic tracking-wide text-gold/90 sm:text-2xl">
+          <span className="whitespace-nowrap px-8 font-serif text-xl font-medium italic tracking-wide text-blue/90 sm:text-2xl">
             {item}
           </span>
-          <span className="size-1.5 rotate-45 bg-gold/40" aria-hidden />
+          <span className="size-1.5 rotate-45 bg-blue/40" aria-hidden />
         </span>
       ))}
     </div>

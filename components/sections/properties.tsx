@@ -34,26 +34,26 @@ export default function Properties() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-ink/20" />
 
-                  <Badge className="absolute left-4 top-4 rounded-full border border-gold/40 bg-ink/60 px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.22em] text-gold backdrop-blur-md">
+                  <Badge className="absolute left-4 top-4 rounded-full border border-blue/40 bg-ink/60 px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.22em] text-blue backdrop-blur-md">
                     {property.tag}
                   </Badge>
 
-                  <div className="absolute bottom-4 right-4 rounded-full border border-gold/30 bg-ink/70 px-4 py-2 backdrop-blur-md">
+                  <div className="absolute bottom-4 right-4 rounded-full border border-blue/30 bg-ink/70 px-4 py-2 backdrop-blur-md">
                     <span className="text-[0.6rem] font-bold uppercase tracking-[0.18em] text-ivory/60">
                       From as low as{" "}
                     </span>
-                    <span className="font-serif text-xl font-semibold text-gold">
+                    <span className="font-serif text-xl font-semibold text-blue">
                       {property.price}
                     </span>
                   </div>
                 </div>
 
                 <div className="pt-6">
-                  <h3 className="font-serif text-2xl font-medium text-ivory transition-colors duration-300 group-hover:text-gold">
+                  <h3 className="font-serif text-2xl font-medium text-ivory transition-colors duration-300 group-hover:text-blue">
                     {property.name}
                   </h3>
                   <p className="mt-1.5 flex items-center gap-1.5 text-sm text-ivory/55">
-                    <MapPin className="size-3.5 text-gold/70" />
+                    <MapPin className="size-3.5 text-blue/70" />
                     {property.location}
                   </p>
 
@@ -63,7 +63,7 @@ export default function Properties() {
                         key={spec}
                         className="flex items-center gap-2 text-[0.7rem] font-medium uppercase tracking-[0.15em] text-ivory/50"
                       >
-                        <BedDouble className="size-3.5 text-gold/50" />
+                        <BedDouble className="size-3.5 text-blue/50" />
                         {spec}
                       </li>
                     ))}
@@ -73,7 +73,7 @@ export default function Properties() {
                     href={waLink(CONTACT_PROMPTS.property(property.name))}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 border-b border-gold/40 pb-1 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-gold transition-all duration-300 hover:border-gold hover:text-gold-light"
+                    className="mt-6 inline-flex items-center gap-2 border-b border-blue/40 pb-1 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-blue transition-all duration-300 hover:border-blue hover:text-blue-light"
                   >
                     <MessageCircle className="size-3.5" />
                     Enquire on WhatsApp

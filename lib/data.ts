@@ -62,7 +62,7 @@ export const HERO = {
   primaryCta: { label: "Explore Stays", href: "#stays" },
   secondaryCta: {
     label: "WhatsApp Concierge",
-    href: waLink("Hello OMuga Services — I'd like to speak to your concierge."),
+    href: waLink("Hello Omuga Services — I'd like to speak to your concierge."),
   },
 };
 
@@ -113,7 +113,7 @@ export const SERVICES: Service[] = [
       "From safari lodges at the edge of the savannah to lakeside cottages and city residences — every stay is inspected, verified and reserved on your behalf.",
     items: ["Safari Lodges", "Luxury Cottages", "City Apartments", "Boutique Hotels"],
     cta: "Reserve a stay",
-    message: "Hello OMuga — I'd like to book a hotel / Airbnb stay.",
+    message: "Hello Omuga — I'd like to book a hotel / Airbnb stay.",
   },
   {
     icon: ConciergeBell,
@@ -123,7 +123,7 @@ export const SERVICES: Service[] = [
       "A single message arranges everything: a chauffeur at arrivals, a private chef at your villa, an itinerary built around you. Consider it done.",
     items: ["Airport Pickups", "Private Chefs", "Chauffeur Service", "Trip Planning"],
     cta: "Request concierge",
-    message: "Hello OMuga — I need your lifestyle & concierge team.",
+    message: "Hello Omuga — I need your lifestyle & concierge team.",
   },
   {
     icon: Gem,
@@ -133,7 +133,7 @@ export const SERVICES: Service[] = [
       "We match sellers with serious buyers and guide buyers to authenticated homes — luxury villas, prime land and properties worth your signature.",
     items: ["Luxury Villas", "Land & Plots", "Verified Listings", "Buyer Matching"],
     cta: "Speak to the desk",
-    message: "Hello OMuga — I'd like to discuss buying or selling property.",
+    message: "Hello Omuga — I'd like to discuss buying or selling property.",
   },
 ];
 
@@ -226,14 +226,14 @@ export const CONCIERGE = [
 ];
 
 /* ------------------------------------------------------------------ */
-/*  Why OMuga                                                          */
+/*  Why Omuga                                                          */
 /* ------------------------------------------------------------------ */
 
 export const WHY_US = [
   {
     icon: ShieldCheck,
     title: "Verified & Authenticated",
-    text: "Every stay and every title deed is physically inspected before it carries the OMuga name.",
+    text: "Every stay and every title deed is physically inspected before it carries the Omuga name.",
   },
   {
     icon: Clock,
@@ -265,7 +265,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "OMuga found us a safari lodge cottage for our anniversary and had a private chef prepare dinner on the deck. Unforgettable.",
+      "Omuga found us a safari lodge cottage for our anniversary and had a private chef prepare dinner on the deck. Unforgettable.",
     name: "David & Faith K.",
     origin: "Nairobi, Kenya",
   },
@@ -289,7 +289,7 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
-    q: "How do I book a stay with OMuga?",
+    q: "How do I book a stay with Omuga?",
     a: "Send us a WhatsApp message with your dates, destination and budget. We reply with a shortlist of verified stays, you choose, and we reserve it for you — no apps, no forms.",
   },
   {
@@ -297,7 +297,7 @@ export const FAQS = [
     a: "Yes. Every stay is physically inspected by our team, and every property for sale is document-authenticated before it is listed with us. We stake our name on it.",
   },
   {
-    q: "Can OMuga help me sell my property?",
+    q: "Can Omuga help me sell my property?",
     a: "Absolutely. We discreetly market luxury villas, land and homes to our network of vetted buyers and manage the process from valuation to handover.",
   },
   {
@@ -317,9 +317,9 @@ export const FAQS = [
 export const CONTACT_PROMPTS = {
   icon: Sparkles,
   generic:
-    "Hello OMuga Services — I'd like to make an enquiry.",
+    "Hello Omuga Services — I'd like to make an enquiry.",
   property: (name: string) =>
-    `Hello OMuga — I'm interested in "${name}". Please share availability and rates.`,
+    `Hello Omuga — I'm interested in "${name}". Please share availability and rates.`,
 };
 
 export const FOOTER_SERVICES = [

@@ -20,15 +20,15 @@ export default function Services() {
       <Stagger className="grid gap-6 md:grid-cols-3" gap={0.15}>
         {SERVICES.map((service) => (
           <StaggerItem key={service.title}>
-            <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-500 hover:-translate-y-2 hover:border-gold/40 hover:gold-glow sm:p-10">
+            <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-500 hover:-translate-y-2 hover:border-blue/40 hover:blue-glow sm:p-10">
               {/* Glow */}
-              <div className="pointer-events-none absolute -right-20 -top-20 size-48 rounded-full bg-gold/10 blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+              <div className="pointer-events-none absolute -right-20 -top-20 size-48 rounded-full bg-blue/10 blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
 
               <div className="mb-8 flex items-start justify-between">
-                <span className="flex size-14 items-center justify-center rounded-full border border-gold/30 text-gold transition-all duration-500 group-hover:bg-gold group-hover:text-ink">
+                <span className="flex size-14 items-center justify-center rounded-full border border-blue/30 text-blue transition-all duration-500 group-hover:bg-blue group-hover:text-white">
                   <service.icon className="size-6" strokeWidth={1.5} />
                 </span>
-                <span className="font-serif text-5xl font-light text-ivory/10 transition-colors duration-500 group-hover:text-gold/25">
+                <span className="font-serif text-5xl font-light text-ivory/10 transition-colors duration-500 group-hover:text-blue/25">
                   {service.index}
                 </span>
               </div>
@@ -46,7 +46,7 @@ export default function Services() {
                     key={item}
                     className="flex items-center gap-3 text-[0.8rem] font-medium uppercase tracking-[0.18em] text-ivory/70"
                   >
-                    <span className="size-1 rotate-45 bg-gold" aria-hidden />
+                    <span className="size-1 rotate-45 bg-blue" aria-hidden />
                     {item}
                   </li>
                 ))}
@@ -56,7 +56,7 @@ export default function Services() {
                 href={waLink(service.message)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center gap-2 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-gold transition-colors duration-300 hover:text-gold-light"
+                className="mt-8 inline-flex items-center gap-2 text-[0.7rem] font-bold uppercase tracking-[0.28em] text-blue transition-colors duration-300 hover:text-blue-light"
               >
                 {service.cta}
                 <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
