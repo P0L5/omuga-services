@@ -3,7 +3,7 @@ import { isAdminSession } from "@/lib/admin";
 import {
   type MediaItem,
   type MediaInput,
-  readRegistry,
+  readRegistryOrSeed,
   writeRegistry,
   newId,
 } from "@/lib/media";
@@ -35,7 +35,7 @@ export async function POST(request: Request): Promise<Response> {
     return NextResponse.json({ error: "File was not uploaded." }, { status: 400 });
   }
 
-  const registry = (await readRegistry()) ?? [];
+  const registry = await readRegistryOrSeed();
   const item: MediaItem = {
     id: newId(),
     kind,

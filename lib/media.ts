@@ -83,12 +83,25 @@ export function seedMedia(): MediaItem[] {
 }
 
 export async function getMedia(kind?: "image" | "video"): Promise<MediaItem[]> {
-  const registry = await readRegistry();
-  const items = registry ?? seedMedia();
+  const items = await readRegistryOrSeed();
   const list = kind ? items.filter((item) => item.kind === kind) : items;
   return list.sort((a, b) =>
     a.createdAt.localeCompare(b.createdAt)
   );
+}
+
+/**
+ * Returns the existing registry, or the seed items when no registry has ever
+ * been written (or it is empty). Used by all read/write operations so that:
+ *  - the seed items shown on the admin dashboard are real entries that can be
+ *    edited/deleted,
+ *  - adding the first item does not wipe the default content,
+ *  - an emptied catalog falls back to the default content again.
+ */
+export async function readRegistryOrSeed(): Promise<MediaItem[]> {
+  const registry = await readRegistry();
+  if (!registry || registry.length === 0) return seedMedia();
+  return registry;
 }
 
 export async function deleteBlobIfHosted(url?: string): Promise<void> {

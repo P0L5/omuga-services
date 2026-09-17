@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isAdminSession } from "@/lib/admin";
 import {
-  readRegistry,
+  readRegistryOrSeed,
   writeRegistry,
   deleteBlobIfHosted,
 } from "@/lib/media";
@@ -28,7 +28,7 @@ export async function PATCH(
   }
 
   const { id } = await context.params;
-  const registry = (await readRegistry()) ?? [];
+  const registry = await readRegistryOrSeed();
   const index = registry.findIndex((item) => item.id === id);
   if (index === -1) {
     return NextResponse.json({ error: "Item not found." }, { status: 404 });
@@ -90,7 +90,7 @@ export async function DELETE(
   }
 
   const { id } = await context.params;
-  const registry = (await readRegistry()) ?? [];
+  const registry = await readRegistryOrSeed();
   const item = registry.find((i) => i.id === id);
   if (!item) {
     return NextResponse.json({ error: "Item not found." }, { status: 404 });
