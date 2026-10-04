@@ -20,15 +20,15 @@ import {
 /*  Contact & socials                                                  */
 /* ------------------------------------------------------------------ */
 
-export const WHATSAPP_PRIMARY = "256794930817";
+export const WHATSAPP_PRIMARY = "256704021736";
 export const WHATSAPP_SECONDARY = "256789253553";
 export const WHATSAPP_KENYA = "254142695839";
 
 export const waLink = (message: string, number: string = WHATSAPP_PRIMARY) =>
-  `whatsapp://send?phone=${number}&text=${encodeURIComponent(message)}`;
+  `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 
 export const PHONES = [
-  { label: "+256 794 930 817", tag: "Uganda — Primary", number: WHATSAPP_PRIMARY },
+  { label: "+256 704 021 736", tag: "Uganda — Primary", number: WHATSAPP_PRIMARY },
   { label: "+256 789 253 553", tag: "Uganda — Reservations", number: WHATSAPP_SECONDARY },
   { label: "+254 142 695 839", tag: "Kenya — Nairobi Office", number: WHATSAPP_KENYA },
 ];

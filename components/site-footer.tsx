@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FOOTER_SERVICES, NAV_LINKS, SOCIALS } from "@/lib/data";
+import { FOOTER_SERVICES, NAV_LINKS, PHONES, SOCIALS } from "@/lib/data";
 import { scrollToSection } from "@/lib/scroll";
 import {
   FacebookIcon,
@@ -109,12 +109,23 @@ export default function SiteFooter() {
             <ul className="mt-6 space-y-4 text-sm text-ivory/55">
               <li>
                 <p className="font-semibold text-ivory/80">Kampala, Uganda</p>
-                <p className="mt-1">+256 794 930 817</p>
-                <p>+256 789 253 553</p>
+                {PHONES.filter((phone) => phone.tag.startsWith("Uganda")).map(
+                  (phone) => (
+                    <p key={phone.number} className="mt-1">
+                      {phone.label}
+                    </p>
+                  ),
+                )}
               </li>
               <li>
                 <p className="font-semibold text-ivory/80">Nairobi, Kenya</p>
-                <p className="mt-1">+254 142 695 839</p>
+                {PHONES.filter((phone) => phone.tag.startsWith("Kenya")).map(
+                  (phone) => (
+                    <p key={phone.number} className="mt-1">
+                      {phone.label}
+                    </p>
+                  ),
+                )}
               </li>
               <li className="text-ivory/40">Concierge — 24 hours, every day</li>
             </ul>
